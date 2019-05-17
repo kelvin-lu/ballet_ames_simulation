@@ -53,7 +53,7 @@ class SubmissionClient:
             if not (user_path.is_dir() and re.search(USER_REGEX, str(user_path))):
                 continue
             user_num = int(user_path.parts[-1].split("_")[1])
-            logger.debug("COLLECTING FEATURES FROM USER {}".format(user_num))
+            logger.debug("COLLECTING FEATURES OF USER {}".format(user_num))
             user_features = []
             for feature_path in user_path.iterdir():
                 if not re.search(FEATURE_REGEX, str(feature_path)):
