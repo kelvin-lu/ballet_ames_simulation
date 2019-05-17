@@ -1,3 +1,5 @@
+import pandas as pd
+
 from ballet.util.io import load_table_from_config
 from funcy import some, where
 
